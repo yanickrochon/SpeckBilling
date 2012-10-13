@@ -1,0 +1,28 @@
+<?php
+return array(
+    'view_manager' => array(
+        'template_path_stack' => array(
+            __DIR__ . '/../view'
+        ),
+    ),
+    'controllers' => array(
+        'invokables' => array(
+            //'invoice' => 'SpeckBilling\Controller\InvoiceController',
+        ),
+    ),
+    'controller_plugins' => array(
+        'invokables' => array(
+        ),
+    ),
+    'service_manager' => array(
+        'aliases' => array(
+            'speckbilling_zend_db_adapter' => 'Zend\Db\Adapter\Adapter',
+        ),
+    ),
+    'router' => array(
+        'routes' => array(
+            //'speckbilling' => array(
+            //),
+        ),
+    ),
+);
